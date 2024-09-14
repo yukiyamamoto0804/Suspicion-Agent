@@ -4,9 +4,9 @@ typer
 termcolor
 tiktoken
 faiss-cpu
-openai
+openai==0.28.0
 pinecone-client
-langchain
+langchain==0.1.0
 discord.py
 inquirer
 rlcard[torch]

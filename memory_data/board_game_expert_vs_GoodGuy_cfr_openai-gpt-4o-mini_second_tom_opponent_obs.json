@@ -1,0 +1,2 @@
+{"message": "", "1_1": {"raw_obs": {"hand": "SQ", "public_card": null, "all_chips": [2, 2], "my_chips": 2, "legal_actions": ["raise", "fold", "check"], "current_player": 1}}}
+{"message": "", "1_3": {"raw_obs": {"hand": "SQ", "public_card": "HK", "all_chips": [6, 2], "my_chips": 2, "legal_actions": ["call", "raise", "fold"], "current_player": 1}}}

@@ -96,6 +96,11 @@ class OpenAIGPT3_5TextDavinci003Settings(ModelSettings):
     llm = LLMSettings(type="openai", model_name="text-davinci-003", max_tokens=2500)
     embedding = EmbeddingSettings(type="openaiembeddings")
 
+class OpenAIGPT4MINISettings(ModelSettings):
+    type = "openai-gpt-4o-mini"
+    llm = LLMSettings(type="openai", model_name="gpt-4o-mini", max_tokens=2500)
+    embedding = EmbeddingSettings(type="openaiembeddings")
+
 # class Llama2_70b_Settings(ModelSettings):
 #     from transformers import LlamaForCausalLM, LlamaTokenizer
 #     type = "llama2-70b"
@@ -110,6 +115,7 @@ model_setting_type_to_cls_dict: Dict[str, Type[ModelSettings]] = {
     "openai-gpt-4-32k-0613": OpenAIGPT432kSettings,
     "openai-gpt-3.5-turbo": OpenAIGPT3_5TurboSettings,
     "openai-gpt-3.5-text-davinci-003": OpenAIGPT3_5TextDavinci003Settings,
+    "openai-gpt-4o-mini": OpenAIGPT4MINISettings,
     # "llama2-70b":Llama2_70b_Settings
 }
 
